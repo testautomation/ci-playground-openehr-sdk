@@ -671,8 +671,8 @@ commands:
       - run:
           name: Configure GIT
           command: |
-            git config --global user.email "64201310+wlad@users.noreply.github.com"
-            git config --global user.name "wlad"
+            git config --global user.email "50235421+ehrbase-tech-user@users.noreply.github.com"
+            git config --global user.name "ci-bot"
             # git config --global push.followTags true
             git remote -v
   
