@@ -1,12 +1,13 @@
 # EHRBase SDK
 
-change 11
-change 2
-change 3
+change 7
+7change 2
+change7 3
 change 33
-change 4
-change 5
+change 7
+change 7
 change 6
+change 7
 
 ## client (mostly Beta)
 Generic openEHR Client and Objekt-mapper:
