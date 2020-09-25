@@ -656,7 +656,7 @@ commands:
             SDK_VERSION=$(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
             echo $SDK_VERSION
             git fetch
-            git merge --strategy=ours origin/master
+            git merge --strategy=ours master
             git checkout master
             git merge release -m "updated version to v${SDK_VERSION} [skip ci]"
             git tag -a v${SDK_VERSION} -m "v${SDK_VERSION} (stable) release"
