@@ -656,11 +656,22 @@ commands:
             SDK_VERSION=$(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)
             echo $SDK_VERSION
             git fetch
+            git merge --strategy=ours master
             git checkout master
-            git reset --hard release
-            git push origin :release    # NOTE: this deletes realse branch on remote
+            git merge release --no-commit
+            git commit -am "updated version to v${SDK_VERSION} [skip ci]"
             git tag -a v${SDK_VERSION} -m "v${SDK_VERSION} (stable) release"
-            git push --force --set-upstream origin master v${SDK_VERSION}
+            git push --set-upstream origin master v${SDK_VERSION}
+            git push origin :release    # NOTE: this deletes realse branch on remote
+            
+            # git checkout develop
+            # git merge master
+            # git push --set-upstream origin develop v${SDK_VERSION}
+
+            # git reset --hard release
+            # git push origin :release    # NOTE: this deletes realse branch on remote
+            # git tag -a v${SDK_VERSION} -m "v${SDK_VERSION} (stable) release"
+            # git push --force --set-upstream origin master v${SDK_VERSION}
 
 
   configure-git-for-ci-bot:
