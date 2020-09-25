@@ -969,7 +969,7 @@ commands:
       - run: 
           name: Install Maven tool
           command: |
-            [ -f /usr/bin/mvn ] && echo "Maven is already installed." || sudo apt install maven -y
+            [ -f /usr/bin/mvn ] && echo "Maven is already installed." || sudo apt update && sudo apt install maven -y
 
 
 
