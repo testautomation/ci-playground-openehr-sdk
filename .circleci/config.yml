@@ -658,10 +658,10 @@ commands:
             git fetch
             git merge --strategy=ours origin/master
             git checkout master
-            git merge release -m "updated version to v${SDK_VERSION} [skip ci]"
+            git merge release --no-ff -m "updated version to v${SDK_VERSION} [skip ci]"
+            git push origin :release    # NOTE: this deletes realse branch on remote
             git tag -a v${SDK_VERSION} -m "v${SDK_VERSION} (stable) release"
             git push --set-upstream origin master v${SDK_VERSION}
-            git push origin :release    # NOTE: this deletes realse branch on remote
             
             # git checkout develop
             # git merge master
