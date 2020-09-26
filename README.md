@@ -5,13 +5,7 @@ change 7
 change7 3
 change 33
 change 7
-change 7
-8change 6
-change 8
-change 9
-change 11
-change 11
-change 16
+change 17
 
 ## client (mostly Beta)
 Generic openEHR Client and Objekt-mapper:
