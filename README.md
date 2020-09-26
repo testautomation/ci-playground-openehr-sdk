@@ -1,6 +1,7 @@
 # EHRBase SDK
 
-SUPER NEW RELEASE VERSION: 
+change SUPER NEW RELEAS VERSION:
+change 11 
 
 ## client (mostly Beta)
 Generic openEHR Client and Objekt-mapper:
@@ -36,7 +37,7 @@ Generic openEHR Client and Objekt-mapper:
 * Added support for PARTY_PROXY
 * Moved to EHRbase 11
 
-## Installation
+# Installation
 
 ### Build
 ```bash
