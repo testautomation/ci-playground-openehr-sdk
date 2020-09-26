@@ -1,9 +1,6 @@
 # EHRBase SDK
 
-clean up
-this is TOP new release!
-
-add more stuff to new release
+SUPER NEW RELEASE VERSION: 
 
 ## client (mostly Beta)
 Generic openEHR Client and Objekt-mapper:
